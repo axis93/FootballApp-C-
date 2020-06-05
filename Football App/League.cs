@@ -11,7 +11,7 @@ namespace Football_App
         private string name;
         private int numbOfTeams;
         private List<Team> teams;
-
+        
         bool found = false;
         private string getTeam(string name)
         { 

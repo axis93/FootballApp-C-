@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Football_App
 {
-    public class Player
-    {
+    public class Player : IStats    {
         private string firstName;
         private string lastName;
         private string name;
@@ -17,6 +16,11 @@ namespace Football_App
         private int assist;
         private int yellow_cards;
         private int red_cards;
+        private int gamePlayed;
+
+        public Player()
+        {
+        }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -27,5 +31,8 @@ namespace Football_App
         public int Assits { get; set; }
         public int Yellow_cards { get; set; }
         public int Red_cards { get; set; }    
+        public int GamePlayed { get; set; }
+
+
     }
 }
